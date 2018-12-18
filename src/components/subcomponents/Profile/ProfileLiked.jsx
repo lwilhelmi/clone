@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import Card from "./Card";
-// import HomeNav from "./subcomponents/HomeNav";
+import Card from "../Card";
 
-class HomeFeed extends Component {
+class ProfileLiked extends Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -19,4 +18,4 @@ class HomeFeed extends Component {
   }
 }
 
-export default HomeFeed;
+export default ProfileLiked;

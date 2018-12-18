@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-class HomeNav extends Component {
+class ProfileNav extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -11,16 +11,16 @@ class HomeNav extends Component {
 
   render() {
     return (
-      <div className="home__navbar">
+      <div className="profile__navbar">
         <NavLink activeClassName="active" to="/home/feed">
-          <i className="fas fa-home" />
+          <i className="fas fa-accessible-icon" />
         </NavLink>
         <NavLink activeClassName="active" to="/home/trending">
-          <i className="fas fa-home" />
+          <i className="fas fa-fire" />
         </NavLink>
       </div>
     );
   }
 }
 
-export default HomeNav;
+export default ProfileNav;

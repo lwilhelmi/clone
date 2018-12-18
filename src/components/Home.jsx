@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
-import HomeFeed from "./subcomponents/HomeFeed";
-import HomeTrending from "./subcomponents/HomeTrending";
-import HomeNav from "./subcomponents/HomeNav";
+import { Switch, Route } from "react-router-dom";
+import HomeFeed from "./subcomponents/Home/HomeFeed";
+import HomeTrending from "./subcomponents/Home/HomeTrending";
+import HomeNav from "./subcomponents/Home/HomeNav";
 
 
 
@@ -13,11 +13,12 @@ class Home extends Component {
         <div className="home__navbar home__navbar__container">
           <HomeNav />
         </div>
-        <div className="home__feed home__feed__container">
-          <Switch>
+        <div className="home__content home__content__container">
+          <HomeFeed />
+          {/* <Switch>
             <Route exact path="/home/feed" component={HomeFeed} />
             <Route exact path="/home/trending" component={HomeTrending} />
-          </Switch>
+          </Switch> */}
         </div>
       </div>
     );
